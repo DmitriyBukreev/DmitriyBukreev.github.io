@@ -1,0 +1,54 @@
+.card {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+    border-radius: 12px;
+}
+
+.card__body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card__footer {
+    padding: 13px 0px 8px;
+    border-top: 2px solid transparent;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+   .card__footer {
+        border-top-color: var(--grey-2);
+   }    
+}
+
+.card__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    color: var(--black);
+    margin-bottom: 6px;
+}
+
+.card__type {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+/* Tooltip related */
+.card__tooltip {
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.card__tooltip .tooltip__bubble {
+    display: block;
+}

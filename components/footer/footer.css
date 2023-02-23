@@ -1,0 +1,29 @@
+.footer {
+    padding-top: 71px;
+    padding-bottom: 136px;
+    text-align: center;
+    background-color: var(--white);
+}
+
+.footer_inner {
+    background-color: var(--grey-1);
+}
+
+.footer__title {
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 48px;
+}
+
+.footer__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        display: none;
+    }
+}

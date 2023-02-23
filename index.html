@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- Главная страница -->
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <title>Main page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="page">
+            <header class="header">
+                <div class="container">
+                    <h1 class="header__title">Reusable component library</h1>
+                </div>
+            </header>
+            <div class="tabs">
+                <input class="tabs__input" type="radio" id="all-tab" name="tab-choice" checked>
+                <input class="tabs__input" type="radio" id="elements-tab" name="tab-choice">
+                <input class="tabs__input" type="radio" id="containers-tab" name="tab-choice">
+                <input class="tabs__input" type="radio" id="templates-tab" name="tab-choice">
+                
+                <div class="tabs__scroller">
+                    <div class="container">
+                        <div class="tabs__scrollable">
+                            <label class="tabs__label" for="all-tab">All components</label>
+                            <label class="tabs__label" for="elements-tab">Elements</label>
+                            <label class="tabs__label" for="containers-tab">Containers</label>
+                            <label class="tabs__label" for="templates-tab">Templates</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tabs__content tabs__content_all">
+                    <main class="preview">
+                        <div class="container">
+                            <div class="preview__inner">
+                                <div class="card">
+                                    <div class="card__body">
+                                        <div class="tooltip card__tooltip">
+                                            <svg class="tooltip__trigger">
+                                                <use href="../../assets/images/icons_sprite.svg#questionmark"></use>
+                                            </svg>
+                                            <div class="tooltip__bubble tooltip__bubble_top">
+                                                Helper Text
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__footer">
+                                        <div class="card__title">Tooltip</div>
+                                        <div class="card__type">Container</div>
+                                    </div>
+                                </div>
+                                <div class="card"></div>
+                                <div class="card"></div>
+                                <div class="card"></div>
+                                <div class="card"></div>
+                                <div class="card"></div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+                <div class="tabs__content tabs__content_elements">
+                    Elements here
+                </div>
+                
+                <div class="tabs__content tabs__content_containers">
+                    Containers here
+                </div>
+
+                <div class="tabs__content tabs__content_templates">
+                    Templates here
+                </div>
+            </div>
+            <footer class="footer">
+                <h2 class="footer__title">About</h2>
+                <p class="footer__description">This project is a collection of professionally designed, pre-built, fully responsive HTML snippets you can drop into your projects. Get started by checking out our free preview components, or browsing the PNG previews in the categories you're most curious about.</p>
+            </footer>
+        </div>    
+    </body>
+</html>

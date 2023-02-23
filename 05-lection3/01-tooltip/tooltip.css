@@ -1,0 +1,57 @@
+.tooltip {
+    display: inline-block;
+    position: relative;
+}
+
+.tooltip__trigger {
+    --size: 24px;
+    height: var(--size);
+    width: var(--size); 
+    cursor: pointer;
+}
+
+.tooltip__bubble {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--grey-2);
+    background: var(--blue);
+    border-radius: 10px;
+    display: none;
+    padding: 8px 21px;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 50%;
+    white-space: nowrap;
+    transform: translateX(-50%);
+}
+
+/* Might be added with JS to display tooltip on top
+when it's close to bottom border of viewport */
+.tooltip__bubble_top {
+    bottom: calc(100% + 8px);
+    top: initial;
+}
+
+.tooltip__trigger:hover ~ .tooltip__bubble {
+    display: block;
+}
+
+.tooltip__bubble:before {
+    content: "";
+    border: 10px solid transparent;
+    border-bottom-color: var(--blue);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tooltip__bubble_top:before {
+    top: 100%;
+    border-bottom-color: transparent;
+    border-top-color: var(--blue)
+}

@@ -1,0 +1,7 @@
+.demo {
+    display: flex;
+    justify-content: center;
+    height: 1000px;
+    align-items: flex-start;
+    padding: 100px;
+}

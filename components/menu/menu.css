@@ -1,0 +1,9 @@
+.menu {
+    
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+}
